@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<!-- Developer's Name : Rishab . H -->
+
+<html lang = "en">
+
+    <head>
+        
+        <meta charset = "UTF-8">
+        <meta http-equiv = "X-UA-Compatible" content = "IE = edge">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+        <title>Calculator by Rishab</title>
+        
+        <link rel = "shortcut icon" type = "image/png" href = "../Icon/letter-r.png">
+
+        <link rel = "stylesheet" href = "style.css">
+        <script type = "text/javascript" src = "script.js" defer></script>
+    
+    </head>
+
+    <body>
+
+        <h1>This Calculator is made by Rishab.H</h1>
+
+        <main id = "calculator">
+            
+            <section id = "display">
+                <input type = "text" id = "history" value = "" disabled>
+                <output name = "result" id = "result" for = "history">0</output>
+            </section>
+
+            <section id = "keypad">
+                <button type = "button" onclick = "allClear()">C</button>
+                <button type = "button" onclick = "oneClear()">&#8676;</button>
+                <button type = "button" onclick = "calculate('%')">%</button>
+                <button type = "button" onclick = "calculate('/')" class = "operator">&divide;</button>
+
+                <button type = "button" onclick = "calculate(7)">7</button>
+                <button type = "button" onclick = "calculate(8)">8</button>
+                <button type = "button" onclick = "calculate(9)">9</button>
+                <button type = "button" onclick = "calculate('*')" class = "operator">&times;</button>
+
+                <button type = "button" onclick = "calculate(4)">4</button>
+                <button type = "button" onclick = "calculate(5)">5</button>
+                <button type = "button" onclick = "calculate(6)">6</button>
+                <button type = "button" onclick = "calculate('-')" class = "operator">&minus;</button>
+                
+                <button type = "button" onclick = "calculate(1)">1</button>
+                <button type = "button" onclick = "calculate(2)">2</button>
+                <button type = "button" onclick = "calculate(3)">3</button>
+                <button type = "button" onclick = "calculate('+')" class = "operator">&plus;</button>
+
+                <button type = "button" onclick = "insertTwoZeros()">00</button>
+                <button type = "button" onclick = "calculate(0)">0</button>
+                <button type = "button" onclick = "calculate('.')">&sdot;</button>
+                <button type = "button" onclick = "result()" class = "operator">&equals;</button>
+            </section>
+        </main>
+
+    </body>
+
+</html>

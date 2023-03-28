@@ -1,0 +1,139 @@
+/* Developer's Name : Rishab . H */
+
+/* COLOR PALETTE */
+:root
+{
+    --accent1 : #F08080 ;
+    --accent2 : #BA55D3 ;
+
+    --support1 : #E1E3E1 ;
+    --support2 : #B5BAB6 ;
+    --support3 : #7E827F ;
+
+    --whiteish : #F2F0EB ;
+    --blackish : #212121 ;
+}
+
+/* GENERAL STYLING */
+
+*, *::before, *::after
+{
+    padding : 0 ;
+    margin : 0 ;
+    box-sizing : border-box ;
+}
+
+html
+{
+    height : 100% ;
+}
+
+body
+{
+    padding : 50px ;
+    font-family : 'Consolas', 'Times New Roman';
+    font-size : 1em ;
+    background-image : linear-gradient(50deg, var(--accent2), var(--accent1)) ;
+}
+
+h1
+{
+    margin : 10px ;
+    padding : 10px ;
+    text-align : center ;
+    color : white ;
+    text-shadow : 
+        -1px -1px 0 black,
+        1px -1px 0 black,
+        -1px 1px 0 black,
+        1px 1px 0 black ;
+    font-family: 'Helvetica' ;
+}
+
+/* CALCULATOR CONTAINER ELEMENTS */
+
+#calculator
+{
+    width :332px ;
+    padding : 10px ;
+    margin : auto ;
+    background-color : var(--whiteish) ;
+    font-size : 1.2rem ;
+    border : solid 1px var(--support2) ;
+    border-radius : 10px ;
+    box-shadow : 0px 15px 20px rgba(0, 0, 0, 0.2) ;
+}
+
+/* CALCULATOR SCREEN */
+
+#display
+{
+    display : grid ;
+    border : solid 1px var(--support2) ;
+    border-radius : 5px ;
+    height : 70px ;
+    color : var(--blackish) ;
+}
+
+#display input
+{
+    display : block ;
+    text-align : right ;
+    padding: 8px 7px ;
+    background : none ;
+    border : none ;
+    font-size : 0.9rem ;
+    color : var(--support3) ;
+}
+
+#display output
+{
+    display : block ;
+    text-align : right ;
+    padding : 0px 5px ;
+    background : none ;
+    font-weight : bold ;
+    font-size : 2rem ;
+}
+
+
+/* CALCULATOR KEYPAD */
+
+#keypad
+{
+    display : grid ;
+    grid-template-columns : auto auto auto auto ;
+    grid-gap : 10px ;
+    padding-top : 10px ;
+}
+
+#keypad button
+{
+    width : 70px ;
+    height : 70px ;
+    border : none ;
+    border-radius : 50% ;
+    font-family: inherit ;
+    font-size : 1.5rem ;
+    cursor : pointer ;
+    outline : none ;
+    background-color : var(--support1) ;
+}
+
+#keypad button:hover
+{
+    background-image : linear-gradient(150deg, var(--support2), var(--support1)) ;
+}
+
+#keypad button.operator
+{
+    font-weight : bold ;
+    font-size : 1.5rem ;
+    background-color : var(--accent1) ;
+    color : var(--whiteish) ;
+}
+
+#keypad button.operator:hover
+{
+    background-image : linear-gradient(150deg, var(--blackish), var(--accent1)) ;
+}
